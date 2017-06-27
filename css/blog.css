@@ -1,0 +1,289 @@
+/*
+ * Globals
+ */
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #404040;
+  background-color: #ffffff;
+}
+
+main{
+  width: 70%;
+  margin: auto;
+}
+
+
+a,  .a,
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #404040;
+  line-height: 1.5;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+ul {
+  margin-top: 2rem;
+}
+
+.likesdislikes {
+  font-size: 1.5rem;
+}
+
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .container-fluid {
+    width:95%;
+  }
+  .blog-title {
+  font-size: 4rem!important;
+  }
+
+
+h1 {
+    font-size: 3rem;
+  }
+
+p .comment-text {
+}
+
+
+.footer-text {
+    font-size: 1.8rem!important;
+  }
+
+.btn-default  {
+  font-size: 1rem;
+    width: 10rem!important;
+    font-weight: bold;
+  }
+
+  .blog-main {
+    width: 50%;
+  }
+
+
+  .blog-nav-item {
+    font-size: 1.6rem!important;
+  }
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  background-color: #inherit;;
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+
+/* Nav links */
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  cursor: pointer;
+}
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+  text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+  color: #000;
+}
+.blog-nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-size: 80px;
+  font-weight: normal;
+  text-align: center;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+  width: 95%;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  margin-bottom: 80px;
+}
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
+}
+
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 5rem;
+}
+
+.btn-default {
+  outline: none;
+  border: 1px solid black;
+  background-color: white;
+  width:10rem;
+  padding: 1rem;
+  margin-left:  1rem;
+  color: #404040;
+  font-weight: bold;
+  transition: background-color 0.5s;
+  cursor: pointer; }
+  .btn:hover, .btn:focus, .btn:active, .btn-default:hover{
+    background-color: black;
+    color: white;
+    border-color: black; }
+
+
+    .wrapper {
+    	margin-top: 80px;
+      margin-bottom: 80px;
+    }
+
+    .form-signin {
+      max-width: 380px;
+      padding: 15px 35px 45px;
+      margin: 0 auto;
+      background-color: #fff;
+      border: 1px solid rgba(0,0,0,0.1);
+      }
+      .form-signin-heading,
+    	.checkbox {
+    	  margin-bottom: 30px;
+    	}
+
+    	.checkbox {
+    	  font-weight: normal;
+    	}
+
+    	.form-control {
+    	  position: relative;
+    	  font-size: 16px;
+    	  height: auto;
+    	  padding: 10px;
+    		@include box-sizing(border-box);
+
+    		&:focus {
+    		  z-index: 2;
+    		}
+    	}
+
+    	input[type="text"] {
+        font-size: 20px;
+    	  margin-bottom: -1px;
+    	  border-bottom-left-radius: 0;
+    	  border-bottom-right-radius: 0;
+    	}
+
+    	input[type="password"] {
+    	  margin-bottom: 20px;
+    	  border-top-left-radius: 0;
+    	  border-top-right-radius: 0;
+    	}
