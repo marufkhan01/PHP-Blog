@@ -1,11 +1,10 @@
 # php_blog
 
-Nina Sjöberg, Nicolas Fuentes, Maruf Khan
+
 
 Class: CMS, PHP and MySQL 
 Nackademin ht 16 - vt17
 
-Link to repo: https://github.com/ninasjoberg/php_blog
 
 
 ## Task:
@@ -26,23 +25,7 @@ If you are visiting the blog you can read all blogposts, leave comments and like
 - Bootstrap for styling
 
 
-## Division of work:
 
-Maruf:
-- login, logout
-- register new users
-
-Nicolas:
-- firstpage view
-- single blog-post view
-- likes
-- implement Bootsrap 
-
-Nina:
-- view for logged in users
-- create, edit and delete blogpost
-- add comment
-- ajax fetch request and DOM manipulation, JavaScript
 
 
 ## Suggestions for future functionality / improvements:
